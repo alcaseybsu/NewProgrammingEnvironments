@@ -7,7 +7,7 @@ class TestRomanConvertor < Test::Unit::TestCase
 
     def test_number4000
         assert_raise RangeError do
-            toRoman(4000)
+            to_roman(4000)
         end
     end
    

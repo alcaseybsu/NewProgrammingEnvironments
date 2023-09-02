@@ -16,7 +16,7 @@ class TestRomanConvertor < Test::Unit::TestCase
     }
 
     def test_toRoman_specialValues
-        @@specialValues.each{ |key, value| assert_equal(value, toRoman(key)) }
+        @@specialValues.each{ |key, value| assert_equal(value, to_roman(key)) }
     end
    
 end

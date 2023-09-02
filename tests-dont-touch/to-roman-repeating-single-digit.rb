@@ -6,8 +6,8 @@ require_relative "../romanconvertor"
 class TestRomanConvertor < Test::Unit::TestCase
 
     def test_toRoman_repeatingSingleDigit
-        assert_equal("I", toRoman(1))
-        assert_equal("III", toRoman(3))
+        assert_equal("I", to_roman(1))
+        assert_equal("III", to_roman(3))
     end
 
 end

@@ -11,7 +11,7 @@ class TestRomanConvertor < Test::Unit::TestCase
     def test_sanity
         original = "MCDXCVIII"
         convertedArabic = fromRoman(original)
-        convertedRoman = toRoman(convertedArabic)
+        convertedRoman = to_roman(convertedArabic)
         assert_equal(original, convertedRoman)
     end
    
