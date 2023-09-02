@@ -17,28 +17,19 @@ def fromRoman(roman_number)
   roman_number.each_char do |char|
     value = roman_numerals[char]
 
-    #Print statements for debugging
-    #puts "Current character #{char}':'"
-    #puts "Current value: #{value}"
-    #puts "Current integer: #{integer}"
-
-    #check if previous_value was smaller
+    # check if previous_value was smaller
     if value > previous_value
-      #Subtract previous char's value
+      # Subtract previous char's value
       integer -= 2 * previous_value
     end
 
-    #Add current character's value to integer
+    # Add current character's value to integer
     integer += value
 
     previous_value = value
-    #Print statements for debugging
-    #puts "Updated integer: #{integer}"
-    #puts " "
-    end
+  end
 
   integer
-  #raise NotImplementedError
 end
 
 def to_roman(integer)
@@ -69,5 +60,4 @@ def to_roman(integer)
   end
 
   roman_number
-  #raise NotImplementedError
 end
